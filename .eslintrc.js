@@ -17,6 +17,7 @@ const eslintConfig = {
     'no-debugger': 'warn',
     '@typescript-eslint/no-non-null-assertion': 'off',
     'explicit-module-boundary-types': 'off',
+    'vue/multi-word-component-names': 'off',
     'prettier/prettier': [
       'warn',
       { endOfLine: 'auto' },

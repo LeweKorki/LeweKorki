@@ -13,4 +13,10 @@ export default defineComponent({})
 
 <style lang="scss">
 @import './styles/index.scss';
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 </style>
