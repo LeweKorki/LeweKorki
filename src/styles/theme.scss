@@ -1,0 +1,26 @@
+@function theme($key, $opacity: 1) {
+  @if map-has-key($theme, $key) {
+    @return rgba(map-get($theme, $key), $opacity) ;
+  
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+$theme: (
+  main: #0883a2,
+  main_dark: #00647d,
+  sky: #00afdb,
+  aqua: #00af97,
+  green: #00ad00,
+  gold: #e5b227,
+  red: #d30000,
+  rose: #a50034,
+  violet: #826577,
+  light: #e3e3e3,
+  gray: #c6cbcc,
+  dark_gray: #7c888c,
+  dark: #28353a,
+  black: #262626,
+);
