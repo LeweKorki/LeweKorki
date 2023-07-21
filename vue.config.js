@@ -5,7 +5,7 @@ var defineConfig = require('@vue/cli-service').defineConfig;
 var path = require("path");
 module.exports = defineConfig({
     pwa: {
-        name: 'Pastolatarnia',
+        name: 'Lewe Korki',
         themeColor: '#00647D',
         appleMobileWebAppCapable: 'yes',
         workboxPluginMode: 'GenerateSW'
