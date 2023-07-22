@@ -1,10 +1,7 @@
 <template>
   <nav>
     <div class="container">
-      <router-link to="/" class="logo">
-        <span>LEWE KORKI</span>
-        <ic icon="feather-pointed" />
-      </router-link>
+      <Logo />
       <div class="content" :class="{ show }">
         <div class="close" @click="show = false">
           <ic icon="times" />
@@ -17,6 +14,7 @@
         </div>
         <div />
         <ul>
+          <li>Umów się</li>
           <li><router-link to="/oferta">Oferta</router-link></li>
           <li>Korepetytorzy</li>
           <li>Pracuj</li>
@@ -34,10 +32,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Login from './Login.vue'
+import Logo from './Logo.vue'
 
 export default defineComponent({
   components: {
     Login,
+    Logo,
   },
   data() {
     return {
@@ -55,19 +55,6 @@ nav {
   display: flex;
   justify-content: center;
   height: 80px;
-}
-
-.logo {
-  font-size: 21px;
-  span {
-    margin-right: 5px;
-  }
-
-  color: theme(light);
-  background: theme(dark);
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 
 .container {
@@ -117,7 +104,10 @@ ul {
     justify-content: center;
     align-items: center;
     padding-inline-start: 0;
-    color: theme(light);
+    a,
+    li {
+      color: theme(light) !important;
+    }
   }
   li {
     margin: 0 5px;

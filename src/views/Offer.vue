@@ -37,8 +37,9 @@ export default defineComponent({
   flex-direction: column;
   margin: auto;
   flex-grow: 1;
-  padding: 20px;
-  max-width: 1200px;
+  padding: 20px 0;
+  width: 1200px;
+  max-width: 95vw;
 }
 
 .slogan {

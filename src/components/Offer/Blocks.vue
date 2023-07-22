@@ -6,8 +6,8 @@
     </div>
   </div>
   <div class="custom">
-    <b>Potrzebujesz czeogoś spoza oferty?</b> Algebra? Analiza? A może język
-    polski? Napisz do nas! Zobaczymy, co da się zrobić!
+    <b>Potrzebujesz czegoś spoza oferty?</b> Algebra? Analiza? A może historia?
+    Napisz do nas! Zobaczymy, co da się zrobić!
   </div>
 </template>
 
@@ -74,10 +74,12 @@ export default defineComponent({
 }
 
 .custom {
+  width: 90vw;
   max-width: 600px;
   // font-weight: 00;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 20px;
   b {
     background: linear-gradient(45deg, theme(main), theme(main_dark));
     background-clip: text;

@@ -2,13 +2,15 @@
   <div class="container">
     <CityInfo :city="cities[selected]" />
     <div class="map">
-      <img src="@/assets/maps/poland_bordercut.png" />
+      <img src="@/assets/maps/poland_bordercut.png" v-if="!dev" />
+      <img src="@/assets/maps/poland_b.png" v-else />
       <div
         class="dot"
         v-for="(city, index) in cities"
         :key="index"
         :style="{ left: `${city.x}%`, top: `${city.y}%` }"
         @click="selected = index"
+        :class="{ dev }"
       >
         <ic icon="star" />
         <div class="name" v-html="city.name" />
@@ -27,6 +29,7 @@ export default defineComponent({
     return {
       cities,
       selected: 0,
+      dev: false,
     }
   },
   components: {
@@ -39,17 +42,18 @@ export default defineComponent({
 @import '@/styles/index.scss';
 .container {
   // background: green;
-  height: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 10px;
+  flex-wrap: wrap;
 }
 .map {
   img {
-    width: 500px;
-    height: 500px;
+    width: 524px;
+    max-width: 90vw;
   }
   .dot {
-    color: theme(main_dark);
+    color: theme(dark);
     transition: 0.2s all;
     cursor: pointer;
     &:hover {
@@ -57,7 +61,9 @@ export default defineComponent({
     }
     position: absolute;
     font-size: 23px;
-    // opacity: 0.4;
+    &.dev {
+      opacity: 0.4;
+    }
     .name {
       position: absolute;
       font-size: 14px;
