@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="itsme">LEWE KORKI <ic icon="feather-pointed" /></div>
+    <div class="itsme">DZIAŁA <ic icon="star" /></div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
   </div>

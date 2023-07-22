@@ -18,5 +18,10 @@ div {
   padding: 7px 10px;
   border-radius: 5px;
   cursor: pointer;
+  @media (max-width: 1000px) {
+    background: theme(dark);
+    color: theme(light);
+    padding: 10px 20px;
+  }
 }
 </style>
