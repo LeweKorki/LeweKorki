@@ -1,5 +1,4 @@
 <template>
-  <div class="fixed" />
   <div class="home">
     <div class="itsme">LEWE KORKI <ic icon="feather-pointed" /></div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
@@ -30,16 +29,5 @@ export default defineComponent({
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 10px;
-}
-
-.fixed {
-  content: '';
-  background: theme(main);
-  position: fixed;
-  top: 10px;
-  left: -90vw;
-  width: 200vw;
-  height: 30px;
-  transform: rotate(-45deg);
 }
 </style>

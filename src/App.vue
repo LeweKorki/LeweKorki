@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Navbar />
     <notifications position="bottom left" width="400px" />
     <router-view />
   </main>
@@ -7,8 +8,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Navbar from '@/components/Shared/Navbar/Index.vue'
 
-export default defineComponent({})
+export default defineComponent({
+  components: {
+    Navbar,
+  },
+})
 </script>
 
 <style lang="scss">
