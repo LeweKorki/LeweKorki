@@ -17,7 +17,7 @@
         </div>
         <div />
         <ul>
-          <li>Oferta</li>
+          <li><router-link to="/oferta">Oferta</router-link></li>
           <li>Korepetytorzy</li>
           <li>Pracuj</li>
           <li>Cennik</li>
