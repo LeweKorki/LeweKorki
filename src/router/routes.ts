@@ -1,6 +1,7 @@
 import { RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
 import Offer from '@/views/Offer.vue'
+import Schedule from '@/views/Schedule.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -11,6 +12,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/oferta',
     component: Offer,
+  },
+  {
+    path: '/umowsie',
+    component: Schedule,
   },
 ]
 

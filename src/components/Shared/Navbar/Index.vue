@@ -1,4 +1,5 @@
 <template>
+  <div class="top" />
   <nav>
     <div class="container">
       <Logo />
@@ -7,15 +8,15 @@
           <ic icon="times" />
         </div>
         <div class="mobileinfo">
-          <router-link to="/" class="logo">
+          <div @click="to('/')" class="logo">
             <span>LEWE KORKI</span>
             <ic icon="feather-pointed" />
-          </router-link>
+          </div>
         </div>
         <div />
         <ul>
-          <li>Umów się</li>
-          <li><router-link to="/oferta">Oferta</router-link></li>
+          <li @click="to('/umowsie')">Umów się</li>
+          <li @click="to('/oferta')">Oferta</li>
           <li>Korepetytorzy</li>
           <li>Pracuj</li>
           <li>Cennik</li>
@@ -44,17 +45,30 @@ export default defineComponent({
       show: false,
     }
   },
+  methods: {
+    to(url: string) {
+      this.$router.push(url)
+      this.show = false
+    },
+  },
 })
 </script>
 
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
+.top {
+  height: 80px;
+}
+
 nav {
   padding: 10px 20px;
   background: theme(black);
   display: flex;
   justify-content: center;
   height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 2137;
 }
 
 .container {
@@ -138,9 +152,10 @@ ul {
 
 .hamburger {
   height: 28px;
-  width: 28px;
+  width: 32px;
   background-image: url('~@/assets/navbar/menu.svg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   @media (min-width: 1000px) {
