@@ -51,7 +51,7 @@ export default defineComponent({
 @import '@/styles/index.scss';
 nav {
   padding: 10px 20px;
-  background: theme(light);
+  background: theme(black);
   display: flex;
   justify-content: center;
   height: 80px;
@@ -99,15 +99,15 @@ ul {
   display: flex;
   list-style: none;
   font-size: 18px;
+  a,
+  li {
+    color: theme(light) !important;
+  }
   @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-inline-start: 0;
-    a,
-    li {
-      color: theme(light) !important;
-    }
   }
   li {
     margin: 0 5px;

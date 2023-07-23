@@ -23,12 +23,12 @@ export default defineComponent({})
   display: flex;
   font-size: 20px;
   max-width: 1000px;
-  margin: 30px 0;
+  margin: 20px 0;
   @media (max-width: 1000px) {
     font-size: 18px;
   }
   .red {
-    background: linear-gradient(30deg, theme(main_dark), theme(dark));
+    background: linear-gradient(30deg, theme(main), theme(main_dark));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 43px;

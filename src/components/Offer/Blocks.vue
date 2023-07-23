@@ -5,6 +5,7 @@
       <div class="title" v-html="science.name" />
     </div>
   </div>
+  <!-- <div>Oferta przedmiotów technicznych</div> -->
   <div class="custom">
     <b>Potrzebujesz czegoś spoza oferty?</b> Algebra? Analiza? A może historia?
     Napisz do nas! Zobaczymy, co da się zrobić!
@@ -39,7 +40,7 @@ export default defineComponent({
   width: 155px;
   height: 145px;
   border-radius: 10px;
-  background: theme(main_dark);
+  background: theme(main);
   color: theme(light);
   display: flex;
   justify-content: space-evenly;
@@ -53,7 +54,7 @@ export default defineComponent({
   cursor: pointer;
 
   &:hover {
-    background: theme(main);
+    filter: brightness(1.12);
   }
 
   img {

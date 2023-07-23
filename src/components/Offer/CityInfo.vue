@@ -87,7 +87,7 @@ export default defineComponent({
     padding: 6px;
     margin-right: 8px;
     border-radius: 10px;
-    background: theme(main_dark);
+    background: theme(main);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ export default defineComponent({
     }
 
     &:hover {
-      background: theme(main);
+      filter: brightness(1.1);
     }
   }
 }
@@ -149,7 +149,7 @@ export default defineComponent({
   -webkit-animation: AnimateCore 4s ease infinite;
   animation: AnimateCore 4s ease infinite;
   &:hover {
-    box-shadow: 0px 0px 4px #00647d;
+    box-shadow: 0px 0px 8px #00647d;
   }
 }
 </style>
