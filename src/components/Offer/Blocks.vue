@@ -1,5 +1,7 @@
 <template>
   <div class="blocks">
+    <!-- {{ sciences }} -->
+    {{}}
     <div v-for="science in sciences" :key="science" class="block">
       <img :src="require(`@/assets/sciences/${science.img}.svg`)" />
       <div class="title" v-html="science.name" />
@@ -14,12 +16,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sciences from '@/data/sciences'
+import { TutorsDB } from '@/data/guys'
 
 export default defineComponent({
   data() {
     return {
-      sciences,
+      sciences: [...new Set(TutorsDB.map((e) => e.sciences).flat(1))],
+      TutorsDB,
     }
   },
 })

@@ -65,7 +65,7 @@
           <div class="desccont big">
             Nie czekaj, napisz do nas już dziś!
             <div class="blocks">
-              <router-link to="/oferta">Omów się na korki</router-link>
+              <router-link to="/umowsie">Umów się na korki</router-link>
               <router-link to="/oferta">Sprawdź naszą ofertę</router-link>
             </div>
           </div>

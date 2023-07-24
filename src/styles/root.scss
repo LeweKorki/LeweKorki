@@ -23,6 +23,8 @@ body {
   margin: 0px !important;
   overflow-x: hidden;
   background-color: #ebeaed;
+  background-image: url('~@/assets/background.jpeg');
+  background-size: cover;
   min-height: 100vh;
   color: #262626;
 }
@@ -118,4 +120,11 @@ img {
     } 
   }
 
+}
+
+.vue-notification {
+  margin: 0 5px 5px;
+  padding: 10px;
+  font-size: 17px !important;
+  color: theme(light);
 }
