@@ -14,7 +14,10 @@
           <img :src="require(`@/assets/sciences/${science.img}.svg`)" />
           <div class="title" v-html="science.name" />
         </div>
-        <div class="block others" @click="pick_science = 2137">
+        <div
+          class="block others"
+          @click=";(pick_science = 2137) && (pick_city = 'Dojazd')"
+        >
           <img src="@/assets/sciences/others.svg" />
           <div class="title" v-html="'Coś innego'" />
         </div>
@@ -82,7 +85,14 @@
           <div>
             <section>
               <div class="h">Przedmiot:</div>
-              <div v-html="sciences[pick_science].name" />
+              <div
+                v-html="
+                  pick_science != 2137
+                    ? sciences[pick_science].name
+                    : 'Coś innego'
+                "
+              />
+              <div></div>
             </section>
             <section>
               <div class="h">Typ Korepetycji:</div>
@@ -90,7 +100,7 @@
                 v-html="pick_online ? 'Online' : `Stacjonarnie (${pick_city})`"
               />
             </section>
-            <section>
+            <section v-if="pick_science != 2137">
               <div class="h">Możliwi Korepetytorzy:</div>
               <div
                 v-for="tutor in [
@@ -137,7 +147,7 @@
         </div>
         <div class="tellus">
           Zostaw kontakt do siebie, najlepiej adres e-mail, numer telefonu lub
-          link do konta na facebooku
+          link do konta na facebooku.
         </div>
         <div class="submitflex">
           <div class="submittext">
@@ -274,6 +284,7 @@ export default defineComponent({
 
   @media (max-width: 1000px) {
     font-size: 23px;
+    margin-top: 10px;
   }
 
   &.reminder {
@@ -290,10 +301,16 @@ export default defineComponent({
 
 .summary {
   width: 800px;
+  max-width: 95vw;
   padding: 10px;
   margin: 10px 0;
   border: 3px solid theme(dark);
   border-radius: 10px;
+  @media (max-width: 1000px) {
+    padding: 5px 0;
+    border: none;
+    margin: 5px 0;
+  }
 }
 
 .h {
@@ -301,18 +318,27 @@ export default defineComponent({
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  @media (max-width: 1000px) {
+    font-size: 18px;
+  }
 }
 
 section {
   margin: 10px;
+  @media (max-width: 1000px) {
+    margin: 5px;
+  }
 }
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .grow {
-  margin-left: 10px;
+  @media (min-width: 1000px) {
+    margin-left: 10px;
+  }
   flex-grow: 1;
 }
 
@@ -327,7 +353,8 @@ button,
   flex-grow: 1;
   border-radius: 7px;
   @media (max-width: 1000px) {
-    font-size: 17px;
+    font-size: 14px;
+    margin: 5px 0;
   }
 }
 select:required:invalid {
@@ -345,10 +372,18 @@ textarea {
   margin: 5px;
 
   border-radius: 7px;
+  @media (max-width: 1000px) {
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 8px;
+  }
 }
 
 .tellus {
   padding: 5px;
+  @media (max-width: 1000px) {
+    font-size: 13px;
+  }
 }
 
 b {
@@ -376,6 +411,7 @@ b {
     border-radius: 5px;
     font-weight: 500;
     color: theme(light);
+    margin-left: 10px;
   }
 }
 </style>

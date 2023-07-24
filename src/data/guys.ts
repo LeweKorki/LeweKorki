@@ -8,22 +8,16 @@ const Tutors = {
     core: 'physics',
     founder: true,
   },
-  Bartek: {
-    name: 'Bartek',
-    sciences: [science[0], science[5], science[6]],
-    city: 'Warszawa',
-    founder: true,
-  },
   Adrian: {
     name: 'Adrian',
     sciences: [science[0], science[2], science[3], science[4]],
     city: 'Kraków',
     founder: true,
   },
-  Skalniak: {
-    name: 'Skalniak',
-    sciences: [science[4], science[7], science[8]],
-    city: 'Kraków',
+  Bartek: {
+    name: 'Bartek',
+    sciences: [science[0], science[5], science[6]],
+    city: 'Warszawa',
     founder: true,
   },
   Michal: {
@@ -32,7 +26,15 @@ const Tutors = {
     city: 'Rzeszów',
     founder: true,
   },
+  Skalniak: {
+    name: 'Skalniak',
+    sciences: [science[4], science[7], science[8]],
+    city: 'Kraków',
+    founder: true,
+  },
+
   // * * //
+
   None: {
     name: 'Brak',
     sciences: [],
