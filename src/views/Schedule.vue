@@ -170,6 +170,7 @@
 import { defineComponent } from 'vue'
 import { TutorsDB } from '@/data/guys'
 import cities from '@/data/cities'
+import axios from '@/config/axios'
 
 export default defineComponent({
   data() {
@@ -188,25 +189,35 @@ export default defineComponent({
     }
   },
   methods: {
-    sendRequest() {
-      // const requestData = {
-      //   subject: this.sciences[this.pick_science!].name,
-      //   place: this.pick_online ? 'Online' : this.pick_city,
-      //   name: this.name,
-      //   level: [
-      //     'Szkoła Podstawowa',
-      //     'Szkoła Srednia PP',
-      //     ' SzkołaSrednia PR',
-      //     'Studia',
-      //   ][Number(this.level)],
-      //   contact: this.contact,
-      //   text: this.text,
-      // }
-      this.$notify({
-        type: 'success',
-        title: 'Wysłano zgłoszenie',
-        text: 'Odezwiemy się tak szybko jak to możliwe',
-      })
+    async sendRequest() {
+      const requestData = {
+        subject: this.sciences[this.pick_science!].name,
+        place: this.pick_online ? 'Online' : this.pick_city,
+        name: this.name,
+        level: [
+          'Szkoła Podstawowa',
+          'Szkoła Srednia PP',
+          ' SzkołaSrednia PR',
+          'Studia',
+        ][Number(this.level)],
+        contact: this.contact,
+        text: this.text,
+      }
+      try {
+        await axios.post('contact/request', requestData)
+        this.$notify({
+          type: 'success',
+          title: 'Wysłano zgłoszenie',
+          text: 'Odezwiemy się tak szybko jak to możliwe',
+        })
+      } catch (e) {
+        this.$notify({
+          type: 'error',
+          title: 'Nie udało się wysłać zgłoszenia',
+          text: 'Spróbuj jeszcze raz lub wyślij zgłoszenie drogą mailową.',
+        })
+      }
+
       this.$router.push('/')
     },
   },
