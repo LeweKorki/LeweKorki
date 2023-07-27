@@ -5,7 +5,11 @@
     <div class="blocks">
       <div
         v-for="science in [
-          ...new Set(city.guys.map((e) => e.sciences).flat(1)),
+          ...new Set(
+            TutorsDB.filter((e) => e.city == city.name)
+              .map((e) => e.sciences)
+              .flat(1)
+          ),
         ]"
         :key="science"
         class="block"
@@ -16,9 +20,24 @@
     </div>
     <div class="section">Korepetytorzy:</div>
     <div class="guys">
-      <div v-for="guy in city.guys" :key="guy">
-        <div v-html="guy.name" />
-        <!-- <ic icon="seedling" v-if="guy.founder" /> -->
+      <div
+        v-for="guy in TutorsDB.filter((e) => e.city == city.name)"
+        :key="guy"
+      >
+        <div class="guysgrow" v-html="guy.name" />
+        <div class="guysicons">
+          <div class="guysicon" v-for="i in guy.icons" :key="i">
+            <div class="ic">
+              <ic :icon="i" />
+            </div>
+            <div class="icondesc">
+              <div class="padding">
+                <div class="t" v-html="iconinfo[i].t" />
+                <div class="c" v-html="iconinfo[i].c" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section">Cena za dojazd: 10zł</div>
@@ -26,10 +45,26 @@
 </template>
 
 <script lang="ts">
+import { TutorsDB } from '@/data/guys'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: ['city'],
+  data() {
+    return {
+      TutorsDB,
+      iconinfo: {
+        otter: {
+          t: 'Wydra',
+          c: 'Twórca grupy, który czuje się lepszy od innych, bo potrafi programować.',
+        },
+        star: {
+          t: 'Założyciel',
+          c: 'Jeden z pięciu założycieli grupy.',
+        },
+      },
+    }
+  },
 })
 </script>
 
@@ -111,6 +146,47 @@ export default defineComponent({
 .guys {
   font-size: 19px;
   margin-top: 5px;
+  max-width: 300px;
+  .guysgrow {
+    flex-grow: 1;
+  }
+  .guysicons {
+    display: flex;
+  }
+  .guysicon {
+    padding: 0 2px;
+    .ic:hover ~ .icondesc {
+      height: 100px;
+      opacity: 1;
+    }
+    .icondesc {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 300px;
+      overflow: hidden;
+      height: 0;
+      background: theme(dark);
+      transition: 0.2s all;
+      z-index: 1;
+      color: theme(light);
+      border-radius: 10px;
+      opacity: 0;
+      @media (min-width: 1000px) {
+        transform: translateX(20%);
+      }
+      .t {
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .c {
+        font-size: 15px;
+      }
+      .padding {
+        padding: 10px;
+      }
+    }
+  }
   @media (max-width: 1000px) {
     font-size: 16px;
   }
@@ -118,7 +194,6 @@ export default defineComponent({
     display: flex;
     align-items: center;
     > svg {
-      font-size: 17px;
       margin-left: 5px;
     }
   }

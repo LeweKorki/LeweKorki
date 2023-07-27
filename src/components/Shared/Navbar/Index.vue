@@ -17,11 +17,11 @@
         <ul>
           <li @click="to('/umowsie')">Umów się</li>
           <li @click="to('/oferta')">Oferta</li>
-          <li>Korepetytorzy</li>
-          <li>Pracuj</li>
-          <li>Cennik</li>
-          <li>Blog</li>
-          <li>FAQ</li>
+          <!-- <li>Korepetytorzy</li> -->
+          <!-- <li>Pracuj</li> -->
+          <!-- <li>Cennik</li> -->
+          <!-- <li>Blog</li> -->
+          <!-- <li>FAQ</li> -->
         </ul>
         <Login />
       </div>

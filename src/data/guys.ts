@@ -6,31 +6,37 @@ const Tutors = {
     sciences: [science[0], science[1], science[4]],
     city: 'Warszawa',
     core: 'physics',
-    founder: true,
+    icons: ['otter', 'star'],
   },
   Adrian: {
     name: 'Adrian',
-    sciences: [science[0], science[2], science[3], science[4]],
+    sciences: [science[0], science[2], science[3]],
     city: 'Kraków',
-    founder: true,
+    icons: ['star'],
   },
   Bartek: {
     name: 'Bartek',
-    sciences: [science[0], science[5], science[6]],
+    sciences: [science[0], science[12], science[13]],
     city: 'Warszawa',
-    founder: true,
+    icons: ['star'],
   },
   Michal: {
     name: 'Michał',
-    sciences: [science[0], science[1], science[5]],
+    sciences: [science[0], science[1], science[12], science[13]],
     city: 'Rzeszów',
-    founder: true,
+    icons: ['star'],
   },
   Skalniak: {
     name: 'Skalniak',
-    sciences: [science[4], science[7], science[8]],
+    sciences: [science[0], science[3], science[13]],
     city: 'Kraków',
-    founder: true,
+    icons: ['star'],
+  },
+
+  PatCich: {
+    name: 'Patrycja',
+    sciences: [science[0], science[7], science[10]],
+    city: 'Wrocław',
   },
 
   // * * //

@@ -128,7 +128,7 @@
                 <option value="0">Szkoła podstawowa, 7-8</option>
                 <option value="1">Szkoła średnia, poziom podstawowy</option>
                 <option value="2">Szkoła średnia, poziom rozszerzony</option>
-                <option value="3">Studia</option>
+                <!-- <option value="3">Studia</option> -->
               </select>
             </section>
           </div>
