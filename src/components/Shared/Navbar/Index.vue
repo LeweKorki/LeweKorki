@@ -19,7 +19,7 @@
           <li @click="to('/oferta')">Oferta</li>
           <!-- <li>Korepetytorzy</li> -->
           <!-- <li>Pracuj</li> -->
-          <!-- <li>Cennik</li> -->
+          <li @click="to('/cennik')">Cennik</li>
           <!-- <li>Blog</li> -->
           <!-- <li>FAQ</li> -->
         </ul>

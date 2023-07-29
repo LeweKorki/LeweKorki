@@ -40,7 +40,6 @@
         </div>
       </div>
     </div>
-    <div class="section">Cena za dojazd: 10zł</div>
   </div>
 </template>
 

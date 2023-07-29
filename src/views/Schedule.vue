@@ -188,6 +188,9 @@ export default defineComponent({
       contact: '',
     }
   },
+  mounted() {
+    document.title = 'Umów się | Lewe Korki'
+  },
   methods: {
     async sendRequest() {
       const requestData = {
