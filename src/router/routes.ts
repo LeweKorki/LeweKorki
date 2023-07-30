@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue'
 import Offer from '@/views/Offer.vue'
 import Schedule from '@/views/Schedule.vue'
 import Prices from '@/views/Prices.vue'
+import Work from '@/views/Work.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -21,6 +22,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/cennik',
     component: Prices,
+  },
+  {
+    path: '/pracuj',
+    component: Work,
   },
 ]
 

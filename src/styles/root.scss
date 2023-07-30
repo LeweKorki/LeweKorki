@@ -1,3 +1,5 @@
+@import './theme.scss';
+
 *,
 *:before,
 *:after {
@@ -26,12 +28,12 @@ body {
   background-image: url('~@/assets/background.jpeg');
   background-size: cover;
   min-height: 100vh;
-  color: #262626;
+  color: theme(dark);
 }
 
 a {
   text-decoration: none;
-  color: #262626;
+  color: theme(dark);
   cursor: pointer;
 }
 
@@ -42,7 +44,7 @@ textarea {
   font-family: 'Rubik', sans-serif;
   border: none;
   background-color: #e3e3e3;
-  color: #333;
+  color: theme(dark);
   padding: 0;
 }
 

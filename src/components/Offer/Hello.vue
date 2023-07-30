@@ -17,7 +17,6 @@ export default defineComponent({})
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
 .desccont {
-  color: theme(dark);
   font-weight: 500;
   text-transform: uppercase;
   display: flex;

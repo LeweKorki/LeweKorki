@@ -44,7 +44,6 @@ export default defineComponent({
 
 .slogan {
   text-align: center;
-  color: theme(dark);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 28px;

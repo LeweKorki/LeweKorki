@@ -10,7 +10,10 @@
         :key="index"
         :style="{ left: `${city.x}%`, top: `${city.y}%` }"
         @click="selected = index"
-        :class="{ dev }"
+        :class="{
+          dev,
+          hide: TutorsDB.filter((e) => e.city == city.name).length == 0,
+        }"
       >
         <ic icon="star" />
         <div class="name" v-html="city.name" />
@@ -23,10 +26,12 @@
 import { defineComponent } from 'vue'
 import cities from '@/data/cities'
 import CityInfo from './CityInfo.vue'
+import { TutorsDB } from '@/data/guys'
 
 export default defineComponent({
   data() {
     return {
+      TutorsDB,
       cities,
       selected: 0,
       dev: false,
@@ -63,6 +68,9 @@ export default defineComponent({
     font-size: 23px;
     &.dev {
       opacity: 0.4;
+    }
+    &.hide {
+      display: none;
     }
     .name {
       position: absolute;

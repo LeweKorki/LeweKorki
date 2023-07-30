@@ -19,7 +19,6 @@ export default defineComponent({})
     margin-right: 5px;
   }
 
-  color: theme(dark);
   background: theme(light);
   font-weight: 600;
   padding: 5px 10px;

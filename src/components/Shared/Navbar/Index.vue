@@ -18,10 +18,11 @@
           <li @click="to('/umowsie')">Umów się</li>
           <li @click="to('/oferta')">Oferta</li>
           <!-- <li>Korepetytorzy</li> -->
-          <!-- <li>Pracuj</li> -->
+          <li @click="to('/pracuj')">Pracuj</li>
           <li @click="to('/cennik')">Cennik</li>
           <!-- <li>Blog</li> -->
           <!-- <li>FAQ</li> -->
+          <a href="//edirac.netlify.app">eDirac</a>
         </ul>
         <Login />
       </div>
@@ -123,6 +124,7 @@ ul {
     align-items: center;
     padding-inline-start: 0;
   }
+  a,
   li {
     margin: 0 5px;
     padding: 0 5px;
@@ -138,7 +140,7 @@ ul {
     }
     &:after {
       content: '';
-      background: theme(dark);
+      background: theme(main);
       height: 3px;
       width: 0%;
       position: absolute;
