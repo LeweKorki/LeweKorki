@@ -66,6 +66,7 @@
         </div>
       </div>
     </div>
+
     <div class="label">
       <label for="target">
         Opisz szczegóły nauczania. Do kogo kierujesz swoje korepetycje? (sp 7-8,
@@ -75,34 +76,41 @@
         <textarea name="target" rows="4" v-model="data.target" required />
       </div>
     </div>
+
     <div class="label">
       <label>
-        Wpisz swój e-mail, numer telefonu i link do profilu na facebooku.
+        Wpisz swój e-mail, numer telefonu i link do profilu na FB.
       </label>
       <div class="inputs">
-        <ic icon="envelope" />
-        <input
-          placeholder="zbigniew.kucharski@gmail.com"
-          name="email"
-          type="email"
-          v-model="data.email"
-          required
-        />
-        <ic icon="phone" />
-        <input
-          placeholder="420 213 769"
-          type="tel"
-          name="phone"
-          v-model="data.phone"
-          required
-        />
-        <ic :icon="['fa-brands', 'facebook-messenger']" />
-        <input
-          placeholder="facebook.com/bosniak2137"
-          name="email"
-          v-model="data.fb_link"
-          required
-        />
+        <div class="inputs">
+          <ic icon="envelope" />
+          <input
+            placeholder="zbigniew.kucharski@gmail.com"
+            name="email"
+            type="email"
+            v-model="data.email"
+            required
+          />
+        </div>
+        <div class="inputs">
+          <ic icon="phone" />
+          <input
+            placeholder="420 213 769"
+            type="tel"
+            name="phone"
+            v-model="data.phone"
+            required
+          />
+        </div>
+        <div class="inputs">
+          <ic :icon="['fa-brands', 'facebook-messenger']" />
+          <input
+            placeholder="facebook.com/bosniak2137"
+            name="email"
+            v-model="data.fb_link"
+            required
+          />
+        </div>
       </div>
     </div>
     <button>Potwierdź</button>
@@ -166,9 +174,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
 form {
-  padding: 10px;
-  border: theme(dark) 3px solid;
-  border-radius: 10px;
+  @media (min-width: 1000px) {
+    padding: 10px;
+    border: theme(dark) 3px solid;
+    border-radius: 10px;
+  }
 }
 input,
 select,
@@ -184,7 +194,7 @@ textarea {
   min-width: 200px;
   resize: none;
   @media (max-width: 1000px) {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -205,11 +215,14 @@ button {
   outline: none;
   background: theme(dark);
   color: theme(light);
+  margin: 5px auto;
+  padding: 8px;
 }
 .inputs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-grow: 1;
   svg {
     font-size: 22px;
     margin-left: 10px;
@@ -224,26 +237,32 @@ button {
   label {
     font-size: 16px;
     @media (max-width: 1000px) {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 }
 
 .sc-icons {
-  margin: 10px 0;
+  margin: 5px 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .icon {
     width: 45px;
     height: 45px;
     border-radius: 10px;
     background: theme(dark);
-    margin: 0 5px;
+    margin: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
     cursor: pointer;
     transition: 0.3 all;
+    @media (max-width: 1000px) {
+      width: 42px;
+      height: 42px;
+      margin: 3px;
+    }
     &.picked {
       background: theme(main);
     }
@@ -266,8 +285,8 @@ button {
       color: theme(light);
       border-radius: 10px;
       font-size: 16px;
+      transform: translateX(50%);
       @media (min-width: 1000px) {
-        transform: translateX(50%);
       }
 
       .padding {
@@ -277,6 +296,9 @@ button {
     img {
       width: 35px;
       filter: invert(0.5) brightness(1.8);
+      @media (max-width: 1000px) {
+        width: 30px;
+      }
     }
   }
 }

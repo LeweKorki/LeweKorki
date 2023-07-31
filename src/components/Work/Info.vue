@@ -1,4 +1,22 @@
 <template>
+  <div class="h">Zasady współpracy</div>
+  <section>
+    Członkowie naszego zespołu to głównie młodzi ludzie, którzy chcą zarobić na
+    studenckie życie.
+  </section>
+  <section>
+    Nasza działalność jest całkiem zdecentralizowana. Każdy jest osobnym
+    autonomicznym korepetytorem. Nie potrzebujesz umowy o pracę, bo nikt z nas
+    pracodawcą nie jest. Każdy pracuje na siebie prowadząc własną dzialaność.
+    Jesteś więc wtedy przedsiębiorcą, a dopóki twoje przychody z korepetycji nie
+    przekroczą 2700zł (bardzo wątpliwe) nie musisz nawet myśleć o podatkach.
+  </section>
+  <section>
+    Gdy już do nas wstąpisz nasza działalność sprowadza się do przekazywania ci
+    uczniów. W zamian za to za każdą godzinę odprowadzasz nam 10zł na cele
+    projektu. W ten sposób będziesz zarabiać na czysto 50zł/h. Musisz przyznać,
+    że są to naprawdę spoko pieniądze.
+  </section>
   <div class="h">Jak dołączyć do nas?</div>
   <section>
     Najpierw upewnij się, że masz dostęp do płynnego internetu i potrafisz
@@ -90,6 +108,9 @@ export default defineComponent({})
   font-weight: 500;
   text-transform: uppercase;
   font-size: 22px;
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
 }
 
 ol {
@@ -97,8 +118,16 @@ ol {
     margin: 7px 0;
   }
 }
+li {
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+}
 
 section {
   margin: 10px 0;
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
 }
 </style>
