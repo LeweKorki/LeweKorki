@@ -51,13 +51,6 @@
         I co najważniejsze, nie zedrzemy z ciebie wszystkich pieniędzy. Nawet
         mafia ma swoje zasady.
       </div>
-      <!-- <div class="whatabout">
-        <div>To jak będzie?</div>
-      </div> -->
-
-      <!-- <div class="button">Sprawdź naszą ofertę</div>
-      <div class="button">Omów się na korki</div>
-      <div class="button">Poznaj naszych korepetytorów</div> -->
     </div>
     <div class="hero hero2">
       <div class="herocont">
@@ -104,13 +97,13 @@ export default defineComponent({
   border-radius: 10px;
 }
 .hero {
-  background-image: url('~@/assets/hero.jpeg');
+  background-image: url('~@/assets/hero/home.jpeg');
   width: 100vw;
   height: 60vh;
   background-size: cover;
   background-position: center;
   &.hero2 {
-    background-image: url('~@/assets/hero2.jpg');
+    background-image: url('~@/assets/hero/home2.jpg');
   }
 }
 

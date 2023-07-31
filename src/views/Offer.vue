@@ -1,6 +1,6 @@
 <template>
+  <Hero />
   <div class="home">
-    <Hello />
     <div class="slogan">Przy nas nauczysz się takich rzeczy jak...</div>
     <Blocks />
     <div class="slogan">
@@ -12,13 +12,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Hello from '@/components/Offer/Hello.vue'
+import Hero from '@/components/Offer/Hero.vue'
 import Blocks from '@/components/Offer/Blocks.vue'
 import PLMap from '@/components/Offer/Map.vue'
 
 export default defineComponent({
   components: {
-    Hello,
+    Hero,
     Blocks,
     PLMap,
   },

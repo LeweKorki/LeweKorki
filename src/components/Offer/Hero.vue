@@ -3,13 +3,15 @@
     <div class="box">
       <div class="sloganbox">
         <div class="sloganmain">
+          <div class="slogan b">Masz problemy z nauką?</div>
           <div class="slogan">
-            Chcesz świadczyć korki i nie wiesz jak zacząć?
+            A może chcesz rozwijać pasje i zdać dobrze maturę?
           </div>
-          <div class="slogan b">Dołącz do nas</div>
+          <div class="slogan">Trafiłeś we właściwe miejsce.</div>
+          <div class="slogan pickmepickme" @click="$router.push('/umowsie')">
+            Umów się już teraz!
+          </div>
         </div>
-        <div class="sub">Dlatego stworzyliśmy ekipę lewych korków -</div>
-        <div class="sub">żebyśmy mogli działać wspólnie.</div>
       </div>
     </div>
   </div>
@@ -24,7 +26,7 @@ export default defineComponent({})
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
 .cont {
-  background-image: url('~@/assets/hero/work.jpg');
+  background-image: url('~@/assets/hero/offer.jpg');
   width: 100vw;
   height: 60vh;
   background-size: cover;
@@ -51,9 +53,10 @@ export default defineComponent({})
 .slogan {
   font-size: 30px;
   text-shadow: 0px 0px 5px theme(dark);
+  margin: 3px 0;
 
   @media (max-width: 1000px) {
-    font-size: 22px;
+    font-size: 19px;
   }
   &.b {
     margin: 5px 0;
@@ -63,7 +66,8 @@ export default defineComponent({})
     color: theme(main_light);
     text-shadow: 0px 0px 15px theme(dark);
     @media (max-width: 1000px) {
-      font-size: 45px;
+      font-size: 40px;
+      line-height: 38px;
     }
   }
 }
@@ -72,6 +76,20 @@ export default defineComponent({})
   font-size: 20px;
   @media (max-width: 1000px) {
     font-size: 15px;
+  }
+}
+
+.pickmepickme {
+  background: theme(main_dark);
+  display: inline-block;
+  padding: 8px 10px;
+  text-shadow: none;
+  margin: 10px 0;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  @media (max-width: 1000px) {
+    font-size: 18px;
   }
 }
 </style>

@@ -1,9 +1,22 @@
 <template>
   <div class="home">
+    <div class="hero">
+      <div class="herocont">
+        <div class="desccont">
+          <div class="desc">
+            <div class="ifflex">
+              <div class="red">Opłaty powinny być {{}}</div>
+              <div class="red">niskie i proste</div>
+            </div>
+            <div>Tak samo z resztą jak podatki, ale żyjemy w Polsce.</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="tax">
-        <div>Opłaty powinny być szybkie i proste.</div>
-        Tak samo z resztą jak podatki, ale żyjemy w Polsce.
+        <div>Cennik za lewe korki</div>
+        Za legitne zapłacisz więcej
       </div>
       <div>
         U nas nie ma miejsca na długie formalności i skomplikowane procedury.
@@ -110,6 +123,80 @@ section {
     .b {
       background: theme(dark_gray, 0.15);
     }
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.itsme {
+  font-size: 35px;
+  color: theme(light);
+  background: theme(dark);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.hero {
+  background-image: url('~@/assets/hero/prices.jpg');
+  width: 100vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 1000px) {
+    height: 50vh;
+  }
+}
+
+.herocont {
+  width: 100%;
+  height: 100%;
+  background: theme(black, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desccont {
+  color: theme(light);
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 25px;
+  max-width: 1000px;
+  padding: 30px 20px;
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+  &.big {
+    font-size: 35px;
+    flex-direction: column;
+    text-align: center;
+    @media (max-width: 1000px) {
+      font-size: 25px;
+    }
+  }
+  .red {
+    color: theme(main_light);
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0px 0px 15px theme(dark);
+    @media (max-width: 1000px) {
+      line-height: 30px;
+      font-size: 36px;
+    }
+  }
+}
+.ifflex {
+  @media (max-width: 1000px) {
+    > div {
+      display: inline;
+    }
+    margin-bottom: 10px;
   }
 }
 </style>
