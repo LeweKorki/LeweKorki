@@ -17,14 +17,14 @@
         <ul>
           <li @click="to('/umowsie')">Umów się</li>
           <li @click="to('/oferta')">Oferta</li>
-          <!-- <li>Korepetytorzy</li> -->
+          <li @click="to('/korepetytorzy')">Korepetytorzy</li>
           <li @click="to('/pracuj')">Pracuj</li>
           <li @click="to('/cennik')">Cennik</li>
           <!-- <li>Blog</li> -->
           <!-- <li>FAQ</li> -->
           <a href="//edirac.netlify.app">eDirac</a>
         </ul>
-        <Login />
+        <Profile />
       </div>
       <div class="hamburger" @click="show = true" />
     </div>
@@ -33,12 +33,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Login from './Login.vue'
+// import Login from './Login.vue'
 import Logo from './Logo.vue'
+import Profile from './DProfile.vue'
 
 export default defineComponent({
   components: {
-    Login,
+    Profile,
     Logo,
   },
   data() {

@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { TutorsDB } from '@/data/guys'
+import { TutorsDB } from '@/data/tutors'
 
 export default defineComponent({
   data() {

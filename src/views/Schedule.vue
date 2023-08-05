@@ -39,7 +39,7 @@
       </div>
       <div class="slogan reminder">
         Pamiętaj, że korepetycje online są pewniejsze, mają większą dostępność
-        korepetytorów i są tańsze (10zł od dojazdu)
+        korepetytorów i jeśli zażądasz dojazdu będą też tańsze (15zł od dojazdu)
       </div>
     </div>
     <!--  -->
@@ -168,7 +168,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { TutorsDB } from '@/data/guys'
+import { TutorsDB } from '@/data/tutors'
 import cities from '@/data/cities'
 import axios from '@/config/axios'
 

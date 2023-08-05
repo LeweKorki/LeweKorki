@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 
 const instance = axios.create({
   withCredentials: true,
-  baseURL: process.env.API_URL || '/api',
+  baseURL: process.env.API_URL || 'http://localhost:80/api',
   headers: {
     Authorization: Cookies.get('jwt') ? `token ${Cookies.get('jwt')}` : '',
   },

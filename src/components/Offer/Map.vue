@@ -26,7 +26,7 @@
 import { defineComponent } from 'vue'
 import cities from '@/data/cities'
 import CityInfo from './CityInfo.vue'
-import { TutorsDB } from '@/data/guys'
+import { TutorsDB } from '@/data/tutors'
 
 export default defineComponent({
   data() {

@@ -1,5 +1,5 @@
 <template>
-  <div>Zaloguj się</div>
+  <router-link to="/login">Zaloguj się</router-link>
 </template>
 
 <script lang="ts">
@@ -10,9 +10,9 @@ export default defineComponent({})
 
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
-div {
+a {
   background: theme(main_dark);
-  color: theme(light);
+  color: theme(light) !important;
   font-weight: 500;
   font-size: 18px;
   padding: 7px 10px;

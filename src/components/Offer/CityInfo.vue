@@ -44,24 +44,16 @@
 </template>
 
 <script lang="ts">
-import { TutorsDB } from '@/data/guys'
+import { TutorsDB } from '@/data/tutors'
 import { defineComponent } from 'vue'
+import iconsinfo from '@/data/icons'
 
 export default defineComponent({
   props: ['city'],
   data() {
     return {
       TutorsDB,
-      iconinfo: {
-        otter: {
-          t: 'Wydra',
-          c: 'Twórca grupy, który czuje się lepszy od innych, bo potrafi programować.',
-        },
-        star: {
-          t: 'Założyciel',
-          c: 'Jeden z pięciu założycieli grupy.',
-        },
-      },
+      iconsinfo,
     }
   },
 })

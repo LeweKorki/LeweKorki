@@ -16,7 +16,7 @@
     <div class="container">
       <div class="tax">
         <div>Cennik za lewe korki</div>
-        Za legitne zapłacisz więcej
+        Za legitne pewnie zapłacisz więcej
       </div>
       <div>
         U nas nie ma miejsca na długie formalności i skomplikowane procedury.
