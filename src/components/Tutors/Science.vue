@@ -44,12 +44,12 @@ export default defineComponent({
   }
 
   @media (max-width: 1000px) {
-    font-size: 16px;
+    font-size: 15px;
     width: 200px;
-    height: 115px;
+    height: 90px;
     margin: 5px;
     img {
-      width: 60px;
+      width: 50px;
     }
   }
 }

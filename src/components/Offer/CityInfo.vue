@@ -46,14 +46,14 @@
 <script lang="ts">
 import { TutorsDB } from '@/data/tutors'
 import { defineComponent } from 'vue'
-import iconsinfo from '@/data/icons'
+import iconinfo from '@/data/icons'
 
 export default defineComponent({
   props: ['city'],
   data() {
     return {
       TutorsDB,
-      iconsinfo,
+      iconinfo,
     }
   },
 })

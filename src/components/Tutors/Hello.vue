@@ -43,20 +43,33 @@ export default defineComponent({
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   .name {
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
+    @media (max-width: 1000px) {
+      font-size: 45px;
+    }
   }
   .fullname {
     font-size: 25px;
+    @media (max-width: 1000px) {
+      font-size: 22px;
+    }
     .degree {
       font-size: 19px;
       margin-right: 5px;
+      @media (max-width: 1000px) {
+        font-size: 17px;
+      }
     }
   }
   .contact {
     font-size: 19px;
+    @media (max-width: 1000px) {
+      font-size: 17px;
+    }
   }
   padding-bottom: 10px;
   border-bottom: 5px solid theme(main);

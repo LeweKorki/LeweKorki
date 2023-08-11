@@ -50,6 +50,7 @@ export default defineComponent({
   align-items: flex-start;
   // flex-direction: column;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 .hello {
   margin: 10px 0;

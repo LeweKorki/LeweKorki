@@ -43,7 +43,9 @@ export default defineComponent({
   width: 700px;
   max-width: 98vw;
   padding: 10px;
-  margin: 10px;
+  @media (min-width: 1000px) {
+    margin: 10px;
+  }
 }
 
 .h {
@@ -54,8 +56,12 @@ export default defineComponent({
 }
 .s {
   display: flex;
+  flex-wrap: wrap;
 }
 section {
   margin: 10px 0;
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
 }
 </style>

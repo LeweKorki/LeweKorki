@@ -5,10 +5,13 @@
         class="button"
         v-for="(section, index) in sections"
         :key="index"
-        :class="{ isActive: currentSection == index }"
-        @click="emitSection(index)"
+        :class="{
+          isActive: currentSection == index,
+          hide: section.logged && !itsme,
+        }"
+        @click="emitSection(index, section.logged)"
       >
-        <ic :icon="section" />
+        <ic :icon="section.icon" />
       </div>
     </div>
   </header>
@@ -19,16 +22,37 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   emits: ['setSection'],
   methods: {
-    emitSection(number: number) {
-      this.currentSection = number
-      this.$emit('setSection', number)
+    emitSection(number: number, logged: boolean) {
+      if (!(logged && !this.itsme)) {
+        this.currentSection = number
+        this.$emit('setSection', number)
+      } else {
+        this.$notify({
+          type: 'warn',
+          title: 'xD',
+          text: 'Co ty kombinujesz cwaniaku?',
+        })
+      }
     },
   },
   data() {
     return {
+      itsme: this.$store.getters.getUser?.login == this.$route.params.login,
       currentSection: 0,
-      sections: ['home', 'feather-alt', 'flask', 'blog', 'user'],
+      sections: [
+        { icon: 'home', logged: false },
+        { icon: 'chart-line', logged: true },
+        {
+          icon: 'feather-alt',
+          logged: true,
+        },
+        { icon: 'flask', logged: true },
+        { icon: 'user', logged: false },
+      ],
     }
+  },
+  mounted() {
+    if (this.itsme) this.emitSection(1, true)
   },
 })
 </script>
@@ -65,5 +89,8 @@ header {
       height: 37px;
     }
   }
+}
+.hide {
+  display: none !important;
 }
 </style>

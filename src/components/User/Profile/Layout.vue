@@ -1,6 +1,6 @@
 <template>
-  <section v-if="prop && prop.length > 0">
-    <header>{{ `user.sections.${title}` }}</header>
+  <section>
+    <header v-html="title" />
     <div class="items">
       <slot />
     </div>
@@ -12,7 +12,6 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    prop: Array,
     title: String,
   },
 })
@@ -25,18 +24,18 @@ section {
 }
 header {
   margin: 20px auto 10px auto;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
   width: 600px;
   max-width: 97%;
   @media (max-width: 1000px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .items {
   transition: 0.2s all;
-  background-color: #dadada;
+  // background-color: #dadada;
   border-radius: 10px;
   margin: auto;
   width: 600px;

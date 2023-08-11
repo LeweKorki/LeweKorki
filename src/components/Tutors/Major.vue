@@ -66,6 +66,9 @@ export default defineComponent({
     font-size: 27px;
     font-weight: 500;
     text-transform: uppercase;
+    @media (max-width: 1000px) {
+      font-size: 19px;
+    }
   }
   .spec {
     margin: 5px 0 0 5px;
@@ -79,9 +82,17 @@ export default defineComponent({
     margin: 2px;
     display: flex;
     justify-content: space-between;
-    .since {
+    flex-wrap: wrap;
+    @media (max-width: 1000px) {
       font-size: 14px;
-      margin-left: 10px;
+    }
+    .since {
+      min-width: 120px;
+      font-size: 12px;
+      @media (min-width: 1000px) {
+        margin-left: 10px;
+        font-size: 14px;
+      }
     }
   }
 

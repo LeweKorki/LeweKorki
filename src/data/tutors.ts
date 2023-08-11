@@ -53,7 +53,7 @@ const Tutors: { [key: string]: Tutor } = {
     ],
     contact: {
       // fb: '...',
-      email: 'mateusz@lewekorki.pl',
+      email: 'adrian@lewekorki.pl',
     },
     sciences: [science[0], science[2], science[3]],
     icons: ['star'],
@@ -76,7 +76,7 @@ const Tutors: { [key: string]: Tutor } = {
     ],
     contact: {
       // fb: '...',
-      email: 'mateusz@lewekorki.pl',
+      email: 'bartek@lewekorki.pl',
     },
     icons: ['star'],
     aboutme,
@@ -98,7 +98,7 @@ const Tutors: { [key: string]: Tutor } = {
     ],
     contact: {
       // fb: '...',
-      email: 'mateusz@lewekorki.pl',
+      email: 'michal@lewekorki.pl',
     },
     icons: ['star'],
     aboutme,
@@ -120,7 +120,7 @@ const Tutors: { [key: string]: Tutor } = {
     ],
     contact: {
       // fb: '...',
-      email: 'mateusz@lewekorki.pl',
+      email: 'skalniak@lewekorki.pl',
     },
     icons: ['star'],
     aboutme,
