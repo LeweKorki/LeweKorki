@@ -1,14 +1,14 @@
 <template>
   <Layout v-if="lessons?.length > 0" title="Moje korepetycje">
     <div
-      v-for="(lessonsgroup, i) in lessons.reduce(function (r, a) {
+      v-for="(lessonsgroup, i) in lessons.reduce((r, a) => {
         r[a.science] = r[a.science] || []
         r[a.science].push(a)
         return r
       }, Object.create(null))"
       :key="lessonsgroup"
     >
-      <div class="science">
+      <div class="header">
         <div
           class="icon"
           :style="{
@@ -71,23 +71,27 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import '@/styles/index.scss';
-.science {
+.header {
   display: flex;
   font-size: 19px;
-  align-items: flex-end;
-  padding-bottom: 10px;
-  border-bottom: 3px solid theme(main);
-}
-.icon {
-  height: 42px;
-  width: 42px;
-  margin-right: 10px;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.15);
-  @media (max-width: 1000px) {
-    width: 27px;
-    height: 27px;
+  align-items: center;
+  padding: 8px 10px;
+  background: theme(dark);
+  color: theme(light);
+  border-radius: 5px;
+  // border-bottom: 3px solid theme(main);
+  margin-top: 15px;
+  .icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    filter: invert(0.5) brightness(1.75);
+    @media (max-width: 1000px) {
+      width: 27px;
+      height: 27px;
+    }
   }
 }
 </style>

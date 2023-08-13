@@ -12,7 +12,7 @@ const Tutors: { [key: string]: Tutor } = {
   Mateusz: {
     name: 'Mateusz',
     fullname: 'Mateusz Słotwiński',
-    degree: 'dr inż. huj.',
+    degree: '',
     city: 'Warszawa',
     majors: [
       {

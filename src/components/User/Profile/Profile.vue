@@ -12,8 +12,8 @@
     <Filter @setSection="setSection" />
     <!-- <Home :user="user" v-if="currentSection == 0" /> -->
     <Dashboard v-if="currentSection == 1" />
-    <!-- <Research :user="user" v-if="currentSection == 2" /> -->
-    <!-- WIP -->
+    <Teaching v-if="currentSection == 2" />
+    <!-- <Research :user="user" v-if="currentSection == 3" /> -->
     <About :user="user" v-if="currentSection == 4" />
   </div>
 </template>
@@ -25,6 +25,7 @@ import UserHeader from './Header/UserHeader.vue'
 import Filter from './Filter.vue'
 // import Home from './Home/Home.vue'
 import Dashboard from './Dashboard/Index.vue'
+import Teaching from './Teaching/Index.vue'
 // import Research from './Research/Research.vue'
 import About from './About/About.vue'
 import { User } from '@/types/user'
@@ -39,6 +40,7 @@ export default defineComponent({
     Filter,
     // Home,
     Dashboard,
+    Teaching,
     // Research,
     About,
   },
