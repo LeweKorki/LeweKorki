@@ -82,13 +82,18 @@ export default defineComponent({
     margin: 2px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 2px;
     @media (max-width: 1000px) {
       font-size: 14px;
     }
     .since {
       min-width: 120px;
       font-size: 12px;
+      @media (max-width: 1000px) {
+        min-width: 110px;
+      }
       @media (min-width: 1000px) {
         margin-left: 10px;
         font-size: 14px;

@@ -35,7 +35,12 @@ const Tutors: { [key: string]: Tutor } = {
       email: 'mateusz@lewekorki.pl',
     },
     icons: ['otter', 'star'],
-    aboutme,
+    aboutme: [
+      'Mam na imię Mateusz. Jestem studentem fizyki technicznej na Politechnice Warszawskiej z zamiarem specjalizacji w fizyce kwantowej i jądrowej. Skończyłem IV Liceum w Rzeszowie rozszerzając przy tym matematykę, informatykę oraz fizykę. ',
+      'W wolnym czasie tworzę różnorodne projekty internetowe zarówno komercyjne jak i edukacyjne oraz zgłębiam tajemnice wszechświata. Prowadziłem zespoły liczące blisko 20 osób w projekcie badającym zjawiska społeczne i świadomość polityczną ludzi, więc jeśli bardzo chcecie załatwie wam pozdrowienia z Sejmu. ',
+      'Interesuje się tym jak działa świat i co stworzyła ludzkość. Od skali abstrakcji matematyki i filozofii przez prawa jakie światem rządzą (stąd fizyka) po wpłynęły na ludzkość (technologia, sztuka, społeczeństwo).',
+      'Super jesteście dbajcie o siebie.',
+    ],
   },
   Adrian: {
     name: 'Adrian',
@@ -57,7 +62,9 @@ const Tutors: { [key: string]: Tutor } = {
     },
     sciences: [science[0], science[2], science[3]],
     icons: ['star'],
-    aboutme,
+    aboutme: [
+      'Szalom, chcesz towar z wyższej półki no to szukaj u mnie. Szczególnie biologia uderza mocno w nos. Gdy miałem trzy lata wpadłem do kotła pełnego właśnie niej i od wtedy całe życie jestem pod wpływem. Moje inne towary też są całkiem dobre. Dla goutikowcow zniżka.',
+    ],
   },
   Bartek: {
     name: 'Bartek',
@@ -79,7 +86,12 @@ const Tutors: { [key: string]: Tutor } = {
       email: 'bartek@lewekorki.pl',
     },
     icons: ['star'],
-    aboutme,
+    aboutme: [
+      'Student PW. Matma rozszerzona na 96%.',
+      'Szaszki rapid chesscom 1800.',
+      'Ze mną nie zginiesz :)',
+      'Myślę że taki minimalizm odda.',
+    ],
   },
   Michal: {
     name: 'Michał',
@@ -101,7 +113,7 @@ const Tutors: { [key: string]: Tutor } = {
       email: 'michal@lewekorki.pl',
     },
     icons: ['star'],
-    aboutme,
+    aboutme: [],
   },
   Skalniak: {
     name: 'Skalniak',
@@ -123,7 +135,11 @@ const Tutors: { [key: string]: Tutor } = {
       email: 'skalniak@lewekorki.pl',
     },
     icons: ['star'],
-    aboutme,
+    aboutme: [
+      'Cześć, mam na imię Jakub i jestem 19-letnim programistą z zamiłowaniem do JavaScript i React. Zrealizowałem już kilka projektów, które pokazują moją umiejętność tworzenia skutecznych rozwiązań.',
+      'Uwielbiam wyzwania i dążenie do doskonalenia swoich umiejętności, aby móc podejmować się bardziej skomplikowanych projektów.',
+      'Jeśli szukasz utalentowanego programisty, który może wnieść wartość do Twojej edukacji, zapraszam do kontaktu. Chętnie podejmę nowe wyzwania i przyczynię się do rozwoju twojej firmy.',
+    ],
   },
 
   // * * //

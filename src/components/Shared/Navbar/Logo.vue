@@ -1,7 +1,7 @@
 <template>
   <router-link to="/" class="logo">
     <span>LEWE KORKI</span>
-    <ic icon="feather-pointed" />
+    <img src="@/assets/logo/white.png" />
   </router-link>
 </template>
 
@@ -16,12 +16,18 @@ export default defineComponent({})
 .logo {
   font-size: 21px;
   span {
-    margin-right: 5px;
+    margin-right: 10px;
   }
+  color: theme(light);
 
-  background: theme(light);
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 0 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 55px;
 }
 </style>

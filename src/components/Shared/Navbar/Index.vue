@@ -8,10 +8,7 @@
           <ic icon="times" />
         </div>
         <div class="mobileinfo">
-          <div @click="to('/')" class="logo">
-            <span>LEWE KORKI</span>
-            <ic icon="feather-pointed" />
-          </div>
+          <Logo />
         </div>
         <div />
         <ul>
@@ -24,7 +21,8 @@
           <!-- <li>FAQ</li> -->
           <a href="//edirac.netlify.app">eDirac</a>
         </ul>
-        <Profile />
+        <Profile class="desktop" />
+        <MProfile class="mobile" />
       </div>
       <div class="hamburger" @click="show = true" />
     </div>
@@ -36,10 +34,12 @@ import { defineComponent } from 'vue'
 // import Login from './Login.vue'
 import Logo from './Logo.vue'
 import Profile from './DProfile.vue'
+import MProfile from './MProfile.vue'
 
 export default defineComponent({
   components: {
     Profile,
+    MProfile,
     Logo,
   },
   data() {
@@ -60,6 +60,7 @@ export default defineComponent({
 @import '@/styles/index.scss';
 .top {
   height: 80px;
+  background: theme(dark);
 }
 
 nav {
@@ -180,6 +181,12 @@ ul {
   color: theme(light);
   cursor: pointer;
   @media (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.desktop {
+  @media (max-width: 1000px) {
     display: none;
   }
 }

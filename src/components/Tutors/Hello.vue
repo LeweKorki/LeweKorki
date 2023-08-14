@@ -7,7 +7,7 @@
         <span v-html="tutor.fullname" />
       </div>
     </div>
-    <div class="div">
+    <div class="contactcontainer">
       <div
         class="contact"
         v-for="(contact, index) in tutor.contact"
@@ -73,5 +73,11 @@ export default defineComponent({
   }
   padding-bottom: 10px;
   border-bottom: 5px solid theme(main);
+}
+
+.contactcontainer {
+  @media (max-width: 1000px) {
+    min-width: 250px;
+  }
 }
 </style>
