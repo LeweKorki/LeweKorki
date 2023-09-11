@@ -9,12 +9,12 @@
     autonomicznym korepetytorem. Nie potrzebujesz umowy o pracę, bo nikt z nas
     pracodawcą nie jest. Każdy pracuje na siebie prowadząc własną dzialaność.
     Jesteś więc wtedy przedsiębiorcą, a dopóki twoje przychody z korepetycji nie
-    przekroczą 2700zł (bardzo wątpliwe) nie musisz nawet myśleć o podatkach.
+    przekroczą 2700zł nie musisz nawet myśleć o podatkach.
   </section>
   <section>
     Gdy już do nas wstąpisz nasza działalność sprowadza się do przekazywania ci
-    uczniów. W zamian za to za każdą godzinę odprowadzasz nam 10zł na cele
-    projektu. W ten sposób będziesz zarabiać na czysto 50zł/h. Musisz przyznać,
+    uczniów. W zamian za to za każdą godzinę odprowadzasz nam 15% dochodów na
+    cele projektu. W ten sposób będziesz zarabiać ponad 50zł/h. Musisz przyznać,
     że są to naprawdę spoko pieniądze.
   </section>
   <div class="h">Jak dołączyć do nas?</div>
@@ -41,14 +41,11 @@
   <div class="h">Rekrutacja przyspieszona</div>
   <ol>
     <li>
-      Zaloguj się na konto, wtedy wypełnienie podania będzie szybsze
-      (opcjonalnie)
-    </li>
-    <li>
-      Wypełnij poniższy formularz i załącz zdjęcia potwierdzające spełnienie
-      wymagań (np. kopię świadectwa maturalnego). <b>UWAGA:</b> Zasłoń wszelkie
-      wrażliwe dane od peselu po numer dokumentu. Jedyne, czego potrzebujemy to
-      imię i nazwisko. Cała reszta to twoja własna odpowiedzialność.
+      Wypełnij poniższy formularz i załącz linki do zdjęć potwierdzających
+      spełnienie wymagań (np. kopię świadectwa maturalnego).
+      <b>UWAGA:</b> Zasłoń wszelkie wrażliwe dane od peselu po numer dokumentu.
+      Jedyne, czego potrzebujemy to imię i nazwisko. Cała reszta to twoja własna
+      odpowiedzialność.
     </li>
     <li>
       Odezwiemy się do ciebie gdy tylko będziemy mieć czas. Gdy zatwierdzimy
@@ -59,10 +56,6 @@
   </ol>
   <div class="h">Rekrutacja standardowa</div>
   <ol>
-    <li>
-      Zaloguj się na konto, wtedy wypełnienie podania będzie szybsze
-      (opcjonalnie)
-    </li>
     <li>
       Wypełnij poniższy formularz, opisz siebie i swoje predyspozycje naukowe
       tak dokładnie jak umiesz. Nie bawimy się w żadne CV i inne formalności.

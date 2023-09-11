@@ -25,11 +25,13 @@
       </div>
       <div class="table">
         <div class="row">
+          <div class="c b"><b>PROMOCJA</b> (pierwszy miesiąc)</div>
           <div class="c">Online</div>
           <div class="c b">Stacjonarnie</div>
           <div class="c">Stacjonarnie (dojazd do ucznia)</div>
         </div>
         <div class="row b">
+          <div class="c b"><b>50zł / h</b></div>
           <div class="c">60zł / h</div>
           <div class="c b">60zł / h</div>
           <div class="c">75zł / h</div>
@@ -48,6 +50,7 @@
         Korepetycje mogą odbywać się w formie hybrydowej, czasami online czasami
         stacjonarnie w zależności od ustaleń.
       </section>
+      <!--  -->
     </div>
   </div>
 </template>

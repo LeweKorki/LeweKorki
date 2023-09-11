@@ -1,8 +1,10 @@
 <template>
   <Hero />
   <div class="home">
+    <Course />
     <div class="slogan">Przy nas nauczysz się takich rzeczy jak...</div>
     <Blocks />
+    <Prices />
     <div class="slogan">
       Wolisz się spotkać stacjonarnie? Sprawdź naszą dostepność!
     </div>
@@ -15,12 +17,16 @@ import { defineComponent } from 'vue'
 import Hero from '@/components/Offer/Hero.vue'
 import Blocks from '@/components/Offer/Blocks.vue'
 import PLMap from '@/components/Offer/Map.vue'
+import Course from '@/components/Offer/Course.vue'
+import Prices from '@/components/Offer/Prices.vue'
 
 export default defineComponent({
   components: {
     Hero,
     Blocks,
     PLMap,
+    Course,
+    Prices,
   },
   mounted() {
     document.title = 'Oferta | Lewe Korki'

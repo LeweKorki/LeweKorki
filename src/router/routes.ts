@@ -2,9 +2,10 @@ import { RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
 import Offer from '@/views/Offer.vue'
 import Schedule from '@/views/Schedule.vue'
-import Prices from '@/views/Prices.vue'
+// import Prices from '@/views/Prices.vue'
 import Work from '@/views/Work.vue'
 import Tutors from '@/views/Tutors.vue'
+import Courses from '@/views/Courses.vue'
 
 import Login from '@/views/User/Auth/Login.vue'
 // import Register from '@/views/User/Auth/Register.vue'
@@ -27,9 +28,13 @@ const routes: RouteRecordRaw[] = [
     component: Schedule,
   },
   {
-    path: '/cennik',
-    component: Prices,
+    path: '/kursy',
+    component: Courses,
   },
+  // {
+  //   path: '/cennik',
+  //   component: Prices,
+  // },
   {
     path: '/pracuj',
     component: Work,

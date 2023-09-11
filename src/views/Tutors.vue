@@ -7,9 +7,7 @@
       <div class="blocks">
         <div
           class="block"
-          v-for="tutor in TutorsDB.filter(
-            (e) => e.sciences.length > 0 && e.icons?.includes('star')
-          )"
+          v-for="tutor in TutorsDB.filter((e) => e.sciences.length > 0)"
           @click="Tutor = tutor"
           :class="{
             active: Tutor == tutor,
