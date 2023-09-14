@@ -22,6 +22,9 @@
           <!-- <li>FAQ</li> -->
           <a href="//edirac.netlify.app">eDirac</a>
         </ul>
+        <ul>
+          <li @click="to('/moje-kursy')">Moje kursy</li>
+        </ul>
         <Profile class="desktop" />
         <MProfile class="mobile" />
       </div>

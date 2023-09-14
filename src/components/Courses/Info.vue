@@ -10,9 +10,6 @@
       tygodniu) z każdego przedmiotu, a jego zadaniem jest szybkie i kompleksowe
       przerobienie całego materiału szkoły średniej.
     </div>
-    <div class="right">
-      <router-link to="/kursy" class="more">Dowiedz się więcej</router-link>
-    </div>
   </div>
 </template>
 
@@ -32,7 +29,7 @@ export default defineComponent({})
 
 .padding {
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 19px;
   text-align: justify;
 
   @media (max-width: 1000px) {
@@ -48,7 +45,7 @@ export default defineComponent({})
   align-items: center;
 
   @media (max-width: 1000px) {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 
@@ -61,22 +58,5 @@ export default defineComponent({})
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.more {
-  background: theme(main);
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 5px;
-  color: #e3e3e3;
-  cursor: pointer;
-
-  font-size: 18px;
-  @media (max-width: 1000px) {
-    font-size: 15px;
-  }
-}
-.right {
-  text-align: right;
 }
 </style>
