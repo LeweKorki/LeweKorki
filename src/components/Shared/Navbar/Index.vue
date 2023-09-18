@@ -22,7 +22,7 @@
           <!-- <li>FAQ</li> -->
           <a href="//edirac.netlify.app">eDirac</a>
         </ul>
-        <ul>
+        <ul v-if="user">
           <li @click="to('/moje-kursy')">Moje kursy</li>
         </ul>
         <Profile class="desktop" />
@@ -49,6 +49,7 @@ export default defineComponent({
   data() {
     return {
       show: false,
+      user: this.$store.getters.getUser,
     }
   },
   methods: {

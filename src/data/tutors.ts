@@ -37,7 +37,7 @@ const Tutors: { [key: string]: Tutor } = {
     icons: ['otter', 'star'],
     aboutme: [
       '<i>A więc stałem się śmiercią, niszczycielem światów...</i>',
-      'Student fizyki technicznej na Politechnice Warszawskiej. W szczególności interesuje mnie fizyka jądrowa w warunkach ekstremalnych ciśnień, gęstości czy energii, a więc model standardowy, cząstki elementarne, wczesny wszechświat czy energetyka termojądrowa. Skończyłem IV Liceum w Rzeszowie rozszerzając przy tym matematykę, informatykę oraz fizykę. W 2019 roku byłem laureatem konkursu kuratoryjnego z fizyki.',
+      'Student fizyki technicznej na Politechnice Warszawskiej. W szczególności interesuje mnie fizyka jądrowa w warunkach ekstremalnych ciśnień, gęstości czy energii, a więc model standardowy, cząstki elementarne, wczesny wszechświat czy energetyka jądrowa i termojądrowa. Skończyłem IV Liceum w Rzeszowie rozszerzając przy tym matematykę, informatykę oraz fizykę. W 2019 roku byłem laureatem konkursu kuratoryjnego z fizyki.',
       'W wolnym czasie tworzę różnorodne projekty internetowe zarówno komercyjne jak i edukacyjne oraz zgłębiam tajemnice wszechświata. Prowadziłem zespoły liczące blisko 20 osób w projekcie badającym zjawiska społeczne i świadomość polityczną ludzi, więc jeśli bardzo chcecie załatwie wam pozdrowienia z Sejmu. Lubie też w wolnym czasie słuchać starej niszowej muzyki i dowiadywać się nowych rzeczy.',
       'Interesuje się tym jak działa świat i co stworzyła ludzkość. Od skali abstrakcji matematyki i filozofii przez prawa jakie światem rządzą (stąd fizyka) po wpłynęły na ludzkość (technologia, sztuka, społeczeństwo). A najbardziej na świecie kocham kaczki. Serio, te zwierzęta są cudowne. ',
     ],

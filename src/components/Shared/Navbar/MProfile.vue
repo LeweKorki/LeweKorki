@@ -20,7 +20,7 @@
       </div>
       <router-link to="/logout" class="logout"> Wyloguj </router-link>
     </article>
-    <router-link class="login" to="/login" v-else>Zaloguj się</router-link>
+    <router-link class="logme" to="/login" v-else>Zaloguj się</router-link>
     <div class="buttons" v-if="user">
       <router-link
         @click="this.$emit('close')"
@@ -155,5 +155,14 @@ article > div {
     width: 40px;
     height: 40px;
   }
+}
+
+.logme {
+  display: block;
+  text-align: center;
+  color: #e3e3e3;
+  font-size: 20px;
+  padding: 2px;
+  font-weight: 400;
 }
 </style>

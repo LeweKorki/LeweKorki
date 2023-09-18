@@ -36,6 +36,10 @@ export default defineComponent({
       Tutor: TutorsDB[0],
     }
   },
+  mounted() {
+    const find = TutorsDB.find((t) => t.name == this.$route.query.tutor)
+    this.Tutor = find ? find : TutorsDB[0]
+  },
   components: { Tutor },
 })
 </script>

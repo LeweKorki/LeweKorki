@@ -60,6 +60,7 @@ export default defineComponent({
 }
 section {
   margin: 10px 0;
+  text-align: justify;
   @media (max-width: 1000px) {
     font-size: 15px;
   }

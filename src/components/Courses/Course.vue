@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/">
+  <router-link :to="`/kursy/${course.id}`">
     <span
       :style="{
         backgroundImage: `url(${require('@/assets/courses/' +
